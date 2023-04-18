@@ -21,13 +21,12 @@
             console.log('Perdimos comunicacion con servidor Negri');
         });
 
-        //emitir un evento
-        socket.emit('mensaje',{nombre:'Sadys castro'});
-         //escuchando evento
-         socket.on('mensaje',(payload)=>{
-           console.log('escuchando: ',payload);
+ 
+
+        socket.on('nuevo-mensaje',function(payload){
+           console.log('escuchando a Mario baraco: ',payload);
         });
-        
+       
 
 
     </script>

@@ -1,2 +1,5 @@
 para instalar nodemon como herramienta de desarrollo
   npm i nodemon -D
+
+
+   // "socket.io": "^2.3.0"

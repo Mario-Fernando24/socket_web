@@ -11,7 +11,6 @@ io.on('connect', client => {
         console.log("Cliente desconectado");
      });
 
-
     //escuchando 
      client.on('mensaje',(payload)=>{
         console.log('Mensaje Mario !!!',payload);

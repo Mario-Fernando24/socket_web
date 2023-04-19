@@ -7,8 +7,8 @@ class Band{
         this.id =uuidV4(); //identificador unico
         this.name = name;
         this.votes = 0;
-
-
     }
 
 }
+
+module.exports = Band;

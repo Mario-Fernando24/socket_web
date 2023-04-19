@@ -1,9 +1,30 @@
 const { io } = require('../index');
+// const Bands = require('../models/bands');
+// const Band = require('../models/band');
+const { emit } = require('nodemon');
+
+// const bands = new Bands();
+
+// bands.addBand( new Band( 'CHAMPETA' ) );
+// bands.addBand( new Band( 'VALLENATO' ) );
+// bands.addBand( new Band( 'PORRO' ) );
+// bands.addBand( new Band( 'CUMBIA' ) );
+// bands.addBand( new Band( 'POP' ) );
+// bands.addBand( new Band( 'ROCK' ) );
+// bands.addBand( new Band( 'BOLERO' ) );
+// bands.addBand( new Band( 'RANCHERA' ) );
+// bands.addBand( new Band( 'DESPECHO' ) );
+
+
+// // console.log(bands);
+
 
 io.on('connect', client => {
     
     console.log("Cliente Conectado");
 
+   //  //EMITIR LOS GENEROS A LOS CLIENTES QUE ESTAN CONECTADOS
+   //  client.emit('active-gender', bands.getBands());
 
 
     //notifica cuando el cliente se desconecta

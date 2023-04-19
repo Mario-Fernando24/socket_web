@@ -26,6 +26,13 @@
         socket.on('nuevo-mensaje',function(payload){
            console.log('escuchando a Mario baraco: ',payload);
         });
+
+        socket.on('active-gender',function(gender){
+           console.clear();
+           console.table(gender);
+        });
+
+
        
 
 
